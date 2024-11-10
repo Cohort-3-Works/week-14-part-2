@@ -17,10 +17,9 @@ function isLegal(user) {
         return false;
     }
 }
-const ans = isLegal(user);
-if (ans) {
-    console.log("I am legal");
-}
-else {
-    console.log("I am not legal");
-}
+// const ans = isLegal();
+// if (ans) {
+//   console.log("I am legal");
+// } else {
+//   console.log("I am not legal");
+// }
