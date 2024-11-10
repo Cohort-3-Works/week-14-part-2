@@ -13,3 +13,6 @@ function isEven(num: number): boolean {
     return false;
   }
 }
+
+const greeting = greet(" Subh");
+console.log(greeting);
