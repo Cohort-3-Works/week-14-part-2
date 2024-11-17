@@ -1,14 +1,23 @@
 "use strict";
+// how can we define type to a very complex object
 let user = {
-    name: "subh",
+    name: "harkirat",
     age: 21,
     address: {
-        city: "Chandigarh",
+        city: "chandigarh",
         country: "India",
-        pincode: 156005,
+        pincode: 125689,
     },
 };
-// how can we pass this as a parameter we create interfaces
+let user2 = {
+    name: "subh",
+    age: 16,
+    address: {
+        city: "chandigarh",
+        country: "India",
+        pincode: 125689,
+    },
+};
 function isLegal(user) {
     if (user.age >= 18) {
         return true;
@@ -17,9 +26,5 @@ function isLegal(user) {
         return false;
     }
 }
-// const ans = isLegal();
-// if (ans) {
-//   console.log("I am legal");
-// } else {
-//   console.log("I am not legal");
-// }
+console.log(isLegal(user));
+console.log(isLegal(user2));

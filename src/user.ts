@@ -1,38 +1,34 @@
-interface Address {
-  city: string;
-  country: string;
-  pincode: number;
-  houseNumber: number;
-}
+// how can we define type to a very complex object
 
 interface User {
   name: string;
   age: number;
-  address: Address;
+  address: {
+    city: string;
+    country: string;
+    pincode: number;
+  };
 }
-interface User2 {
-  name: string;
-  age: number;
-  address: Address;
-}
 
-// To make a specific key optional we need to use ?
-// like address?
-// Interface can also use another interface
-
-interface Address {}
-
-let user = {
-  name: "subh",
+let user: User = {
+  name: "harkirat",
   age: 21,
   address: {
-    city: "Chandigarh",
+    city: "chandigarh",
     country: "India",
-    pincode: 156005,
+    pincode: 125689,
   },
 };
 
-// how can we pass this as a parameter we create interfaces
+let user2: User = {
+  name: "subh",
+  age: 16,
+  address: {
+    city: "chandigarh",
+    country: "India",
+    pincode: 125689,
+  },
+};
 
 function isLegal(user: User): boolean {
   if (user.age >= 18) {
@@ -42,10 +38,5 @@ function isLegal(user: User): boolean {
   }
 }
 
-// const ans = isLegal();
-
-// if (ans) {
-//   console.log("I am legal");
-// } else {
-//   console.log("I am not legal");
-// }
+console.log(isLegal(user));
+console.log(isLegal(user2));
