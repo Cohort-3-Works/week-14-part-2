@@ -1,4 +1,5 @@
 // how can we define type to a very complex object
+//interface can also use another interfaces
 
 interface User {
   name: string;

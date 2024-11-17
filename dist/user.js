@@ -1,5 +1,6 @@
 "use strict";
 // how can we define type to a very complex object
+//interface can also use another interfaces
 let user = {
     name: "harkirat",
     age: 21,
@@ -15,7 +16,6 @@ let user2 = {
     address: {
         city: "chandigarh",
         country: "India",
-        pincode: 125689,
     },
 };
 function isLegal(user) {
