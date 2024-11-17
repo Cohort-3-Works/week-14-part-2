@@ -7,9 +7,15 @@ let person = {
 };
 //class
 class Manager {
+    // constructor(public name: string, public age: number)
     constructor(name, age) {
         this.name = name;
         this.age = age;
+    }
+}
+class God extends Manager {
+    constructor(name, age) {
+        super(name, age);
     }
 }
 let theUser = new Manager("jhon", 30);

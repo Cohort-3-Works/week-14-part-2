@@ -6,7 +6,7 @@ interface User {
   address: {
     city: string;
     country: string;
-    pincode: number;
+    pincode?: number;
   };
 }
 
@@ -26,7 +26,6 @@ let user2: User = {
   address: {
     city: "chandigarh",
     country: "India",
-    pincode: 125689,
   },
 };
 
